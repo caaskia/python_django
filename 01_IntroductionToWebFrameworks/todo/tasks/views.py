@@ -6,6 +6,7 @@ from django.views import View
 class ToDoView(View):
 
     def get(self, request, *args, **kwargs):
+
         return HttpResponse('<ul>'
                             '<li>Установить python</li>'
                             '<li>Установить django</li>'
