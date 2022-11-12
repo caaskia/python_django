@@ -7,7 +7,6 @@ class ToDoView(View):
 
     def get(self, request, *args, **kwargs):
 
-
         todo_set = {'Установить python',
                      'Установить django',
                       'Запустить сервер',
