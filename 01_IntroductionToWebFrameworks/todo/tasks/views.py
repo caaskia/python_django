@@ -20,7 +20,6 @@ class ToDoView(View):
 
         return HttpResponse(resp)
 
-
         # return HttpResponse('<ul>'
         #                     '<li>Установить python</li>'
         #                     '<li>Установить django</li>'
