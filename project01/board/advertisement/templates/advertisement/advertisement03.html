@@ -1,0 +1,79 @@
+<html>
+{% load static %}
+<head>
+    <style>
+        .wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}
+    </style>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+  <header class="header">Система контроля версий Git</header>
+  <article class="main">
+    <p>
+        На этом курсе вы изучите систему управления версиями — Git.
+        Основы Git пригодятся, если вы решите управлять историей исходного кода, работать с удаленными репозиториями как Github.
+    </p>
+  </article>
+  <aside class="aside aside-1">
+
+      <img src="{% static "images/images03.jpeg" %}" alt="Git" >
+  </aside>
+  <aside class="aside aside-2">1 500руб</aside>
+  <footer class="footer"><a href="{% url 'advertisements_list' %}">Home</a></footer>
+</div>
+
+</body>
+
+</html>
+
+
