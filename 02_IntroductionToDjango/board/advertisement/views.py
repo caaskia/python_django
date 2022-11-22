@@ -3,7 +3,13 @@ from django.http import HttpResponse
 
 
 def advertisements_list(request, *args, **kwargs):
-    return render(request, 'advertisement/advertisements_list.html',{})
+    advertisements = ['Python-фреймворк Django',
+                      'Веб-верстка «Базовый уровень',
+                      'Система контроля версий Git',
+                      'Профессия Python-разработчик',
+                      'Профессия Fullstack-разработчик на Python']
+
+    return render(request, 'advertisement/advertisements_list.html',{'advertisements': advertisements})
 
 
 def advertisement01(request, *args, **kwargs):
