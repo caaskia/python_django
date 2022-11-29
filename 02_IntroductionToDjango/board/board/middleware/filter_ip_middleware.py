@@ -1,4 +1,16 @@
 import time
+from datetime import datetime
+
+import logging
+py_logger = logging.getLogger(__name__)
+py_logger.setLevel(logging.INFO)
+
+py_handler = logging.FileHandler(f"{__name__}.log", mode='w')
+py_formatter = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
+
+py_handler.setFormatter(py_formatter)
+py_logger.addHandler(py_handler)
+
 
 from django.core.exceptions import PermissionDenied
 
@@ -14,6 +26,15 @@ class FilterIPMiddleware:
         ip = request.META.get('REMOTE_ADDR')
         if ip not in allowed_ips:
             raise PermissionDenied
+
+        now = datetime.now()
+        str_now = now.strftime("%Y-%m-%d_%H:%M:%S")
+
+        user = request.user
+        url_path = request.path
+        method = request.META.get('REQUEST_METHOD')
+
+        py_logger.info(f" {str_now}: user:{user}  url:{url_path}  method:{method}")
 
         response = self.get_response(request)
 
