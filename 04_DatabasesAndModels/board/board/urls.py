@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from app_profiles.views import UserFormView, UserEditFormView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('advertisements_app.urls'))
+    path('', include('advertisements_app.urls')),
+    path('profiles/register',UserFormView.as_view()),
+    path('profiles/<int:profile_id>/edit/',UserEditFormView.as_view()),
 ]

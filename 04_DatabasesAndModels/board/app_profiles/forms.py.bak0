@@ -1,0 +1,31 @@
+from django import forms
+from django.core.exceptions import ValidationError
+import datetime
+
+class UserForm(forms.Form):
+  username = forms.CharField(min_length=3)
+  password = forms.CharField(min_length=6)
+  first_name = forms.CharField(min_length=3)
+  second_name = forms.CharField(min_length=3)
+  last_name = forms.CharField(min_length=3)
+  email = forms.EmailField()
+  birthday = forms.DateField()
+
+  def clean_birthday(self):
+      data = self.cleaned_data['birthday']
+      today = datetime.date.today()
+      year_delta = (today - data).days / 365
+      if year_delta < 18:
+          raise ValidationError('Вам нет 18 лет')
+      return data
+
+  # def clean(self):
+  #     cleaned_data = super(UserForm, self.clean())
+  #     first_name = cleaned_data.get('first_name')
+  #     last_name = cleaned_data.get('last_name')
+  #     if first_name == 'Иван' and last_name == 'Иванов':
+  #         msg = 'Иванов Иван'
+  #         self.add_eror('first_name', msg)
+  #         self.add_eror('last_name', msg)
+  #         raise ValidationError(msg)
+
