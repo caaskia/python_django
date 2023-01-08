@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: left; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left main right'
+    ;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 250px 200px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 12px 0;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Список новостей</h2>
+
+    <a href="create/">Добавить новость</a>
+
+{% if news_list %}
+
+<div class="grid-container">
+  <div class="item2"> <b>Название</b></div>
+  <div class="item3"><b>Дата создания</b></div>
+  <div class="item4"><b></b></div>
+</div>
+
+{% for news in news_list %}
+    {% if news.active %}
+        <div class="grid-container">
+          <div class="item2">
+              <a href="/news/{{ news.id }}"> {{news.title}}</a>
+          </div>
+          <div class="item3">
+                {{ news.created_at }}
+          </div>
+          <div class="item4">
+              <a href="edit/{{news.id}}">Редактировать</a>
+          </div>
+        </div>
+    {% endif %}
+{% endfor %}
+
+{% else %}
+        <p> Объявлений нет </p>
+{% endif %}
+
+</body>
+</html>
+
+

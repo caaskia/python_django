@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header   header   header    header'
+    'menu     menu     menu      main'
+    'menu     menu     menu      main'
+    'menu     menu     menu      main';
+  gap: 7px;
+  background-color: #2196F3;
+  padding: 15p
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  grid-template-rows: 50px 150px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+  textarea {
+    background: #fce9c0; /* Цвет фона */
+    border: 2px solid #a9c358; /* Параметры рамки */
+    padding: 10px; /* Поля */
+    width: 50%; /* Ширина */
+    height: 50px; /* Высота */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 14px; /* Размер шрифта */
+   }
+
+</style>
+</head>
+<body>
+
+<!--<a>Количество просмотров: {{ news_list.views_count }}</a>-->
+<a href="{% url 'news' %}">К списку новостей</a>
+
+<div class="grid-container">
+  <div class="item1">{{ news.title }}</div>
+  <div class="item2">{{ news.content }}</div>
+  <div class="item3">{{ news.created_at }} </div>
+</div>
+
+<br>
+
+    <form method="post" action="/news/{{ news.id }}/">
+        {% csrf_token %}
+         <fieldset>
+            <legend> Оставьте комментарий </legend>
+            {{ user_form.as_p }}
+            <button type="submit">Сохранить комментарий</button>
+         </fieldset>
+    </form>
+
+<br>
+<h3>Комментарии</h3>
+{% if comments_list %}
+
+    <ul>
+        {% for comment in comments_list %}
+        <li>  {{ comment.text }}  ({{ comment.username }}) </li>
+
+      {% endfor %}
+
+    </ul>
+
+{% else %}
+        <p> Комментариев нет </p>
+{% endif %}
+
+
+
+</body>
+</html>
