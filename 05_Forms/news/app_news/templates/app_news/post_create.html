@@ -5,15 +5,15 @@
     <title>Новость</title>
 </head>
 <body>
-    <h2>Создание комментария</h2>
-    <form method="post" action="/comment/create">
-        {% csrf_token %}
-        {{ user_form.as_p }}
-        <button type="submit">Создать комментарий</button>
-    </form>
+<h2>Создание комментария</h2>
+<form method="post" action="/comment/create">
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    <button type="submit">Создать комментарий</button>
+</form>
 
-    <br>
-    <a href="{% url 'news' %}">Назад к списку новостей</a>
+<br>
+<a href="{% url 'news' %}">Назад к списку новостей</a>
 
 </body>
 </html>
