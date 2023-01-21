@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+		{% block title %}{% endblock %}
+	</title>
+
+	<style>
+    .item1 { grid-area: header; }
+    .item2 { grid-area: left; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'left main right'
+        ;
+      gap: 5px;
+      background-color: #2196F3;
+      padding: 5px;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 250px 200px;
+    }
+
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: left;
+      padding: 12px 0;
+      font-size: 20px;
+    }
+    </style>
+
+</head>
+<body>
+
+<div id="head">
+	{% block head %}
+		{% block menu %}{% endblock %}
+	{% endblock %}
+</div>
+
+
+<div id="content">
+	{% block page %}
+		{% block content %}
+		{% endblock %}
+	{% endblock %}
+</div>
+
+
+<div id="footer">
+	{% block footer %}
+		{% block copyright %}
+		{% endblock %}
+	{% endblock %}
+</div>
+
+
+</body>
+</html>

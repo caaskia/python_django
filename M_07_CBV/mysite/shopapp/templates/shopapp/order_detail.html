@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Order #{{ object.pk }} details
+{% endblock %}
+
+
+{% block content %}
+    <div>
+        <a href="{% url 'shopapp:orders_list' %}">Back to orders</a>
+    </div>
+    <h2>Order #{{ object.pk }} details</h2>
+    <div>
+        <p>Order by {% firstof object.user.first_name %}</p>
+        <p>Promocode: <code>{{ object.promocode }}</code> </p>
+        <p>Delivery address: <code>{{ object.delivery_address }}</code> </p>
+        <div>
+            Product in order
+            <ul>
+                {% for product in object.products.all %}
+                    <li>{{ product.name }} for {{ product.price }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <div>
+        <a href="{% url 'shopapp:order_update' pk=object.pk %}">Update order</a>
+    </div>
+    <br>
+    <div>
+        <a href="{% url 'shopapp:order_delete' pk=object.pk %}">Delete product</a>
+    </div>
+
+{% endblock %}

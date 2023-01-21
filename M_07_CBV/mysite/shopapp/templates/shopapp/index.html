@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Shop home
+{% endblock %}
+
+
+{% block content %}
+    <h2>Shop home</h2>
+
+    <div>
+        <a href="{% url 'shopapp:products_list' %}">Products list</a>
+    </div>
+    <br>
+    <div>
+        <a href="{% url 'shopapp:orders_list' %}">Orders list</a>
+    </div>
+
+{%  endblock %}

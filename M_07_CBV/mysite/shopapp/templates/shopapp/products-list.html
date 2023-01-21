@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Список товаров
+{% endblock %}
+
+
+{% block content %}
+    <div>
+        <a href="{% url 'shopapp:index' %}">To home shop</a>
+    </div>
+
+    <h2>Список товаров</h2>
+
+    <div>
+        <a href="{% url 'shopapp:product_create' %}">Create a new product</a>
+    </div>
+    <br>
+
+    {% if products %}
+
+    <div class="grid-container">
+      <div class="item2"> <b>Название</b></div>
+      <div class="item3"><b>Цена</b></div>
+      <div class="item4"><b>Дата создания</b></div>
+    </div>
+
+    {% for product in products %}
+        <div class="grid-container">
+          <div class="item2">
+              <a href="{% url 'shopapp:product_details' pk=product.pk %}"> {{product.name}}</a>
+          </div>
+          <div class="item3">
+                {{ product.price }}
+          </div>
+          <div class="item4">
+               {{ product.created_at }}
+          </div>
+        </div>
+    {% endfor %}
+
+    {% else %}
+            <p> Товаров нет </p>
+    {% endif %}
+
+
+{% endblock %}
