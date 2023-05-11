@@ -1,17 +1,101 @@
+from django.shortcuts import reverse, get_object_or_404
+from django.contrib.auth import authenticate, login, get_user_model
 from django.contrib.auth.decorators import login_required, permission_required, user_passes_test
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.views import LogoutView
 from django.http import HttpRequest, HttpResponse, JsonResponse
-from django.contrib.auth import authenticate, login
 from django.urls import reverse_lazy
 from django.views import View
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, UpdateView, ListView, DetailView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin # , PermissionRequiredMixin
+
 
 from .models import Profile
 
-
-class AboutMeView(TemplateView):
+# class AboutMeView(TemplateView):
+class AboutMeView(UpdateView):
     template_name = "myauth/about-me.html"
+
+    model = Profile
+    fields = "bio", "agreement_accepted", "avatar"
+    context_object_name = "profile"
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(self.model, pk=self.request.user.profile.pk)
+
+    def get_success_url(self):
+        return reverse(
+            "myauth:about-me",
+        )
+
+class UsersListView(ListView):
+    template_name = "myauth/users-list.html"
+    User = get_user_model()
+    queryset = User.objects.all()
+    context_object_name = "user_list"
+
+
+class ProfileDetailsView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
+    # template_name_suffix = "_update_form"
+    template_name = "myauth/profile.html"
+
+    model = Profile
+    fields = "bio", "agreement_accepted", "avatar"
+    context_object_name = "profile"
+
+    def test_func(self):
+        # if self.request.user.is_superuser:
+        if self.request.user.is_staff:
+            self.permit = True
+        else:
+            queryset = self.get_queryset()
+            item = super().get_object(queryset)
+            self.permit = True if self.request.user.id == item.user_id else False
+        return True
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        User = get_user_model()
+        profile = context.get("profile")
+        context['usr'] = get_object_or_404(User, pk=profile.user_id)
+        context['permit'] = self.permit
+        return context
+
+    def get_success_url(self):
+        return reverse(
+            "myauth:users-list",
+        )
+
+
+class ProfileUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    # template_name_suffix = "_update_form"
+    template_name = "myauth/profile_update_form.html"
+
+    model = Profile
+    fields = "bio", "agreement_accepted", "avatar"
+    context_object_name = "profile"
+
+    def test_func(self):
+        # if self.request.user.is_superuser:
+        if self.request.user.is_staff:
+            permit = True
+        else:
+            queryset = self.get_queryset()
+            item = super().get_object(queryset)
+            permit = True if self.request.user.id == item.user_id else False
+        return permit
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        User = get_user_model()
+        profile = context.get("profile")
+        context['usr'] = get_object_or_404(User, pk=profile.user_id)
+        return context
+
+    def get_success_url(self):
+        return reverse(
+            "myauth:users-list",
+        )
 
 
 class RegisterView(CreateView):
