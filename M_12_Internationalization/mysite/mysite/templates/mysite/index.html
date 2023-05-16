@@ -1,0 +1,38 @@
+{% extends 'mysite/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+   {% translate 'Main index'%}
+{% endblock %}
+
+
+{% block body %}
+  <h2>{% translate 'Hello Main Index'%}!</h2>
+
+{% url 'myauth:about-me'       as about_me_url %}
+{% url 'myauth:users-list'     as users_list_url %}
+{% url 'shopapp:products_list' as products_list_url %}
+{% url 'shopapp:orders_list'   as orders_list_url %}
+
+
+  <div>
+    {% blocktranslate %}
+        <div>
+           <a href="{{ about_me_url }}">About me</a>
+        </div>
+        <br>
+        <div>
+           <a href="{{ users_list_url }}">Go to users list</a>
+        </div>
+        <br>
+        <div>
+           <a href="{{ products_list_url }}">Go to products list (Practical work)</a>
+        </div>
+        <div>
+           <a href="{{ orders_list_url }}">Go to orders list</a>
+        </div>
+    {% endblocktranslate  %}
+  </div>
+
+{% endblock %}
