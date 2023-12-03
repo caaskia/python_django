@@ -1,0 +1,105 @@
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.row {
+    margin: 30px 10px;
+}
+
+.ffmpeg-img {
+    max-width: 150px;
+    height: auto;
+    margin: 15px 10px;
+}
+
+.btn-form {
+    width: 100px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 10px;
+}
+
+.form-group {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Стилизация input[type=file] */
+.custom-file-input {
+    color: transparent;
+    /* Делаем текст кнопки невидимым */
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    /* Скрываем кнопку ввода браузера для WebKit */
+}
+
+.custom-file-input::before {
+    content: 'Выберите исходный каталог';
+    /* Задаем свою текстовую надпись */
+    display: inline-block;
+    background: #6d7f81;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.custom-file-input:hover::before {
+    background: #0056b3;
+    /* Изменяем стиль при наведении */
+}
+
+.custom-file-input:active::before {
+    background: #004080;
+    /* Изменяем стиль при нажатии */
+}
+
+/* Стилизация output[type=file] */
+.custom-file-output {
+    color: transparent;
+    /* Делаем текст кнопки невидимым */
+}
+
+.custom-file-output::-webkit-file-upload-button {
+    visibility: hidden;
+    /* Скрываем кнопку ввода браузера для WebKit */
+}
+
+.custom-file-output::before {
+    content: 'Выберите выходной каталог';
+    /* Задаем свою текстовую надпись */
+    display: inline-block;
+    background: #6d7f81;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.custom-file-output:hover::before {
+    background: #0056b3;
+    /* Изменяем стиль при наведении */
+}
+
+.custom-file-output:active::before {
+    background: #004080;
+    /* Изменяем стиль при нажатии */
+}
