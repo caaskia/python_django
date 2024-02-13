@@ -1,0 +1,4 @@
+2024-02-11 18:40:28,086 [DEBUG] shopapp.views: Product for shop index view: [('Laptop', 1999), ('Desktop', 2999), ('Smartphone', 999)]
+2024-02-11 18:40:28,089 [INFO] shopapp.views: Rendering shop index view
+2024-02-11 18:41:08,665 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-11 18:41:10,194 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

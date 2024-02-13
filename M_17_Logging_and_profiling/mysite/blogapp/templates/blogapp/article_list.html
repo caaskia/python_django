@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Blog list
+{% endblock %}
+
+{% block leftbar %}
+  <div>
+    <img src="{% static 'img/django-edu.webp' %}" alt="Django-edu" class="ffmpeg-img">
+    <img src="{% static 'img/Django-MVC.jpeg' %}" alt="Django-MVC" class="ffmpeg-img">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <h4>Blogs:</h4>
+  {% if articles %}
+    <div>
+        {% for article in articles %}
+          <div>
+            <p>Название статьи: {{ article.title }}</p>
+            <p>Дата публикации: {{ article.pub_date }}</p>
+            <p>Автор: {{ article.author }}</p>
+            <p>Категория: {{ article.category }}</p>
+              <ul>
+                {% for tag in article.tags.all %}
+                  <li>{{ tag }}</li>
+                {% endfor %}
+              </ul>
+          </div>
+        {% endfor %}
+    </div>
+
+  {% else %}
+    <h3>No articles yet</h3>
+  {% endif %}
+
+{% endblock %}
