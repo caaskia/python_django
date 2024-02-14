@@ -2,6 +2,7 @@ version: "3.9"
 services:
   app:
     build:
+      context: .  # Path to directory containing Dockerfile
       dockerfile: ./Dockerfile
     command:
       - "python"
@@ -10,3 +11,22 @@ services:
       - "0.0.0.0:8080"
     ports:
       - "8000:8080"
+    logging:
+        driver: loki
+        options:
+            loki-url: "http://localhost:3100/loki/api/v1/push"
+#            loki-url: "http://host.docker.internal:3100/loki/api/v1/push"
+
+  grafana:
+    image: grafana/grafana:9.2.15
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+
+  loki:
+    image: grafana/loki:2.8.0
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
