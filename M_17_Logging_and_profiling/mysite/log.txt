@@ -34,3 +34,49 @@ Traceback (most recent call last):
   File "/mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py", line 143, in get
     name = elem["namee"]
 KeyError: 'namee'
+2024-02-14 10:07:57,587 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-14 10:07:58,235 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:08:01,637 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-14 10:08:02,214 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:08:14,899 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-14 10:08:15,490 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:08:46,149 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:09:16,381 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-14 10:09:16,677 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:09:19,758 [ERROR] django.request: Internal Server Error: /shop/products/export/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py", line 143, in get
+    name = elem["namee"]
+KeyError: 'namee'
+2024-02-14 10:09:19,771 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:09:19,923 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:10:16,487 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:12:32,324 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 10:12:32,895 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:12:37,829 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-14 10:12:38,110 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:13:37,952 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:29,089 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 09:01:35,042 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-17 09:01:35,488 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-17 09:01:35,543 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,615 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,683 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,752 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,823 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,891 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,962 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:36,031 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:36,103 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:36,228 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:59,910 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
