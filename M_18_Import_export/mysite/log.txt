@@ -1,0 +1,767 @@
+2024-02-11 18:40:28,086 [DEBUG] shopapp.views: Product for shop index view: [('Laptop', 1999), ('Desktop', 2999), ('Smartphone', 999)]
+2024-02-11 18:40:28,089 [INFO] shopapp.views: Rendering shop index view
+2024-02-11 18:41:08,665 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-11 18:41:10,194 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 06:58:44,458 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 06:58:48,601 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-14 07:01:34,070 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:46:29,070 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:46:31,984 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-14 09:48:45,041 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 09:48:45,560 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:48:53,043 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 09:48:53,535 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:49:01,035 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 09:49:01,534 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:49:12,112 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 09:49:12,601 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:49:26,302 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 09:49:26,806 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:49:38,413 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 09:49:38,887 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:50:04,967 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 09:50:05,459 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 09:50:11,439 [ERROR] django.request: Internal Server Error: /shop/products/export/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py", line 143, in get
+    name = elem["namee"]
+KeyError: 'namee'
+2024-02-14 10:07:57,587 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-14 10:07:58,235 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:08:01,637 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-14 10:08:02,214 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:08:14,899 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/mysite/settings.py changed, reloading.
+2024-02-14 10:08:15,490 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:08:46,149 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:09:16,381 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-14 10:09:16,677 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:09:19,758 [ERROR] django.request: Internal Server Error: /shop/products/export/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-_8QfR6vy-py3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py", line 143, in get
+    name = elem["namee"]
+KeyError: 'namee'
+2024-02-14 10:09:19,771 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:09:19,923 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:10:16,487 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:12:32,324 [INFO] django.utils.autoreload: /mnt/data/storeEdu/python_django/M_17_Logging_and_profiling/mysite/shopapp/views.py changed, reloading.
+2024-02-14 10:12:32,895 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-14 10:12:37,829 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-14 10:12:38,110 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-14 10:13:37,952 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:29,089 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 09:01:35,042 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-17 09:01:35,488 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-17 09:01:35,543 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,615 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,683 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,752 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,823 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,891 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:35,962 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:36,031 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:36,103 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:36,228 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 09:01:59,910 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:24:51,018 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 11:24:54,220 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-17 11:24:54,637 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:24:54,705 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:24:54,772 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:24:54,841 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:24:54,912 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:25:54,347 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:52:18,590 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 11:52:19,135 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): o4506744570773504.ingest.sentry.io:443
+2024-02-17 11:52:19,571 [DEBUG] urllib3.connectionpool: https://o4506744570773504.ingest.sentry.io:443 "POST /api/4506744586698752/envelope/ HTTP/1.1" 200 0
+2024-02-17 11:54:01,358 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/settings.py changed, reloading.
+2024-02-17 11:54:03,697 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 11:54:16,969 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 11:55:11,054 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 11:55:13,124 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 11:55:33,624 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:11:45,691 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 12:11:47,390 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:11:54,638 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 12:11:56,513 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:12:23,515 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 12:12:25,055 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:15:00,459 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 12:15:02,060 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:15:43,490 [ERROR] django.request: Internal Server Error: /admin/shopapp/product/import-product-csv/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py", line 75, in import_csv
+    return render(request, "admin/csv_import.html", context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: admin/csv_import.html
+2024-02-17 12:20:03,611 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 12:20:05,216 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:26:40,304 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 12:26:42,316 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:42:47,386 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-17 12:44:12,421 [ERROR] django.request: Internal Server Error: /admin/shopapp/product/import-products-csv/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py", line 102, in import_csv
+    products.objects.bulk_create(products)
+AttributeError: 'list' object has no attribute 'objects'
+2024-02-17 12:45:05,651 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-17 12:45:07,467 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 05:51:47,609 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/views.py changed, reloading.
+2024-02-18 05:51:49,504 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 05:52:49,035 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/views.py changed, reloading.
+2024-02-18 05:52:50,766 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 06:03:33,809 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 06:59:05,967 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-18 06:59:07,522 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 06:59:22,056 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/shopapp/admin.py changed, reloading.
+2024-02-18 06:59:23,481 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 08:24:45,890 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 08:29:13,279 [WARNING] django.request: Method Not Allowed: /shop/api/products/upload_csv/
+2024-02-18 09:21:54,512 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 09:24:47,838 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/admin.py changed, reloading.
+2024-02-18 09:24:49,334 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 09:28:00,851 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 09:28:11,194 [ERROR] django.request: Internal Server Error: /admin/blogapp/article/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: blogapp_article.body
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2068, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: blogapp_article.body
+2024-02-18 09:29:17,111 [ERROR] django.request: Internal Server Error: /admin/blogapp/article/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: blogapp_article.body
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2068, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: blogapp_article.body
+2024-02-18 09:48:30,068 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 09:48:51,065 [ERROR] django.request: Internal Server Error: /admin/blogapp/article/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: blogapp_article
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1931, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/options.py", line 834, in get_changelist_instance
+    return ChangeList(
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/query.py", line 621, in count
+    return self.query.get_count(using=self.db)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 559, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 544, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: blogapp_article
+2024-02-18 10:08:23,678 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:08:26,173 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:08:42,907 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:08:44,542 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:08:56,097 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:08:58,398 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:09:05,434 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:09:07,355 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:09:25,775 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:09:27,279 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:09:48,536 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:09:50,471 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:10:12,740 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:10:16,336 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:34:06,208 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:34:12,742 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp' is not a registered namespace
+2024-02-18 10:40:38,522 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/urls.py changed, reloading.
+2024-02-18 10:40:40,118 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:40:44,756 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:40:49,491 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articles_list' not found. 'articles_list' is not a valid view function or pattern name.
+2024-02-18 10:42:57,131 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 10:42:58,694 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:43:29,542 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articles_list' not found. 'articles_list' is not a valid view function or pattern name.
+2024-02-18 10:45:54,604 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/admin.py changed, reloading.
+2024-02-18 10:45:56,241 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:49:20,510 [ERROR] django.request: Internal Server Error: /blog/articles/2/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: blogapp/article_detail.html
+2024-02-18 10:57:00,832 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 10:57:02,454 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:57:27,950 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 10:57:29,978 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 10:57:36,265 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 10:57:37,866 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 11:19:28,317 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 11:19:46,139 [WARNING] django.request: Not Found: /articles/latest/feed/
+2024-02-18 11:26:44,390 [ERROR] django.request: Internal Server Error: /blog/articles/2/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: article_detail.html
+2024-02-18 11:29:30,926 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 11:29:32,619 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 11:29:36,064 [ERROR] django.request: Internal Server Error: /blog/articles/2/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/article_detail.html
+2024-02-18 11:30:37,131 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 11:30:38,680 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 11:31:20,637 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 11:31:22,253 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 11:33:25,504 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:34:25,372 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:35:55,409 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:36:08,214 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:36:53,585 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:37:25,387 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:37:42,321 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:38:30,209 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 11:38:32,197 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 11:38:35,755 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:38:55,371 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'blogapp/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 17, in add_domain
+    if url.startswith("//"):
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/utils/functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "/home/lynx/.cache/pypoetry/virtualenvs/python-django-ohcxJJZX-py3.10/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'blogapp/' is not a registered namespace
+2024-02-18 11:39:24,129 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 11:39:25,698 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 11:39:41,266 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 11:39:42,864 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:22:34,648 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/models.py changed, reloading.
+2024-02-18 14:22:37,260 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:22:59,551 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/models.py changed, reloading.
+2024-02-18 14:23:01,589 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:23:15,998 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/models.py changed, reloading.
+2024-02-18 14:23:17,969 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:23:58,518 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/blogapp/views.py changed, reloading.
+2024-02-18 14:24:00,525 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:32:50,530 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:32:52,200 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:33:26,825 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:33:28,352 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:33:37,763 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:33:39,441 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:34:10,816 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:34:12,983 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:34:35,014 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:34:36,535 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:35:28,227 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:35:29,798 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:35:40,984 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:35:42,496 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:35:56,311 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:35:58,406 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:36:26,555 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:36:28,793 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:36:57,998 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:36:59,884 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:37:12,065 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/urls.py changed, reloading.
+2024-02-18 14:37:14,942 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:37:34,052 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:38:13,245 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/settings.py changed, reloading.
+2024-02-18 14:38:15,301 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:44:17,876 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/sitemaps.py changed, reloading.
+2024-02-18 14:44:20,058 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:45:14,873 [INFO] django.utils.autoreload: /mnt/data/Edu/python_django/M_18_Import_export/mysite/mysite/sitemaps.py changed, reloading.
+2024-02-18 14:45:16,405 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:50:39,862 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:53:52,750 [WARNING] django.request: Not Found: /product
+2024-02-18 14:54:19,455 [WARNING] django.request: Not Found: /product/api/
