@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  User Orders List
+{% endblock %}
+
+{% block body %}
+  <h1>User {{ user.username }}'s Orders:</h1>
+  {% if orders %}
+    <div>
+      <p>{{ user.username }} has completed the following orders:</p>
+      <ul>
+        {% for order in orders %}
+          <li>
+            <a href="{% url 'shopapp:order_details' pk=order.pk %}">
+              Order #{{ order.pk }}</a> - {{ order.created_at }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% else %}
+    <h3>User {{ user.username }} has no orders yet.</h3>
+  {% endif %}
+{% endblock %}
